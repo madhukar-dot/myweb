@@ -1,0 +1,441 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <style>
+     .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 10px;
+  left: 120px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 10px;
+  right: 120px;
+}
+
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.media{
+  
+  color: blue;
+ text-align: center
+}
+.p{
+  padding: 200px 320px 280px;
+ 
+}
+.row {
+  padding-top: 20px;
+ padding: 30px 350px ;
+  display: flex;
+  background-color: white;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column{
+  padding: 5px;
+}
+h3{color: blue;}
+h6{color: blue;}
+.grid-container{
+  display: grid;
+
+}
+.sp
+{
+  color: red;
+}
+.item{
+  float: right;
+ 
+  padding-bottom: 300px;
+  padding: 600px;
+  
+}
+.a{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+  
+}
+.card-text{
+  color: blue;
+  
+}
+
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 20px 10px;
+}
+
+.row1 {
+  padding-top: 40px;
+  padding-left: 320px;
+  padding-right: 320px;
+  background-color: rgba(red, green, blue, alpha);
+}
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+ 
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 40px 40px 40px;
+  font-size: 13px;
+  
+  color: white;
+  }
+  .row2{
+    background-image: url(images/banner2.jpg);
+padding-left:200px;
+padding-right: 200px;
+    opacity: 1;
+  border-image-width: 100px ; 
+    background-position: center;
+    background-position: absolute;
+  background-repeat: no-repeat;
+  }
+  
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card1 {
+  
+  background-size: cover;
+  width: 250px;
+  height: 300px;
+ 
+ padding: right 800px;
+ text-align: center;
+ background-color: #f1f1f1;
+
+}
+.card1-text{
+  color: darkblue;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 30px 20px;
+}
+.g{color: white;}
+.btn{
+  width: 250px;
+  background-color: darkblue;
+}
+.p{
+  text-align: center;
+
+}
+.work{
+  display: inline-block;   
+       padding-top: 30px;
+       
+        padding-right: 350px;
+        padding-left :420px;
+     
+        text-align: center;
+     
+}
+
+.copy{
+  text-align: center;
+  padding-right: 350px;
+        padding-left:350px;}
+.column5 {
+  float: left;
+  width: 50%;
+  flex: 50%;
+}
+
+/* Clear floats after the columns */
+.row5:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row5 {
+  display: flex;
+}
+.column4 {
+  float: left;
+  width: 50%;
+  flex: 50%;
+}
+
+/* Clear floats after the columns */
+.row4:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row4 {
+  display: flex;
+  padding-right: 120px;
+  padding-left: 120px;
+}
+.vl {
+  border-left: 2px solid grey;
+  height: 200px;
+  padding-left:32px;
+  padding-right: 38px;
+}
+
+.RE{
+  padding-left:80px;
+  color: darkmagenta;
+}
+.just{
+  color: darkmagenta;
+}
+.get{
+  padding-left: 120px;
+}
+.vertical{
+  writing-mode: vertical-rl;
+  
+  
+  transform: rotate(360deg);
+ 
+
+  vertical-align: baseline;
+}
+.rotate{
+   transform: rotate(-180deg);}
+   
+</style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Document</title> 
+</head> 
+<body>
+  <div class="container">
+    
+          <img src="images/banner.png" alt="" width="100%">
+          
+          <div class="top-left">Work is Right</div>
+        
+          <div class="top-right">
+            <img src="images/cofee.png" alt="">contact</div>
+          
+          <div class="centered">
+            <h4>"THE WORLD OF JOBS IS NOW WORLD OF WORKS"</h4>
+            Today globally organisations are in going through 
+            at 'Work Revoluion', the way it is performed yesterday,
+            isnt the same today and tomorrow. The velociy of change 
+            is faster than ever,which is poised to transform.
+
+          </div>
+        </div>
+      </div>
+  </div>
+          <div class="row">
+            <div class="column">
+              <img src="images/qlana.png" alt="">
+            </div>
+            <div class="column">
+              <img src="images/figure it.png" alt="">
+            </div>
+            <div class="column">
+              <img src="images/idea.png" alt="">
+            </div>
+            <div class="column">
+              <img src="images/zero.png" alt="">
+            </div>
+            <div class="column">
+              <img src="images/msme.png" alt="">
+            </div>
+          </div>    
+            <hr style="height:2px;border-width:0;color:red;background-color:gray">
+
+   <div class="media">
+     <a class="d-flex align-self-center" href="#">
+         
+     </a>
+     <div class="media-body">
+       
+       <h4>"WE BELIEVE WORK CREATES THE FUTURE AND WORK IS RIGHT"</h4>
+      <p style="text-align: center ; padding-right: 320px; padding-left: 320px;"> With increasing opions to deliver work ranging from Work-from home
+        to Work-from Anywhere,let's  welcome to know the Metamorposhis of the wrok. 
+        These surveys largely build on contextual
+       intelligence,capures insight that foster that best decision making</p>
+    
+   </div>
+  </div>
+
+</div>
+  <hr style="height:2px;border-width:0;color:red;background-color:gray">
+
+
+<div class="row1">
+  <h3 class="font-weight-bold text-center ">The <span class="sp">A.I.M</span> of survey</h3>
+
+  <div class="column1">
+    <div class="card"> <img src="images/access.png " class="img-thumbnail mx-auto" width="60" class="card-img-top">
+      <h6 class="font-weight-bold  "><span class="sp">A</span>CCESS</h6>
+                        <p class="card-text">Assess Employee Satisfaction & Constraints</p></div>
+  </div>
+  <div class="column1">
+    <div class="card"><img src="images/identity.png " class="img-thumbnail mx-auto" width="60" class="card-img-top">
+      <h6 class="font-weight-bold "><span class="sp">I</span>DENTITY</h6>
+<p class="card-text">Gaps to improve Progess and productivity</p></div>
+  </div>
+  <div class="column1">
+    <div class="card">
+      <img style="padding-top:14px ;" src="images/measure.png " class="img-fluid mx-auto" width=60 class="card-img-top">
+      <h6 class="font-weight-bold  "><span class="sp">M</span>EASURE</h6>
+<p class="card-text">Offer a Metric to measure work from home effectiveness</p></div>
+  </div>
+</div>
+          </div>
+<hr style="height:2px;border-width:0;color:red;background-color:gray">
+<div class="grid-container">
+           <h6 style="text-align: left; font-size: 30px; color: darkmagenta;padding-right: 120px;padding-left: 120px;">STANDOUTS</h6>
+           <div class="row4">
+            <div class="column4">
+              <img align=left src="images/approach.png" alt="">
+              <h6 class="RE">A 'SCIFA' APPROACH</h6>
+              <p style="text-align: justify;padding-left: 80px ;color: darkmagenta;padding-right:150px;">A Scientific Factual approach.Statistical methodology with work ergonomics put to measure the Work from Home effectiveness</p>
+              <img float=left align=left src="images/First things.png" alt="">
+              <h6 class="RE">FIRST THINGS FIRST</h6>
+              <p style="text-align: justify;padding-left: 80px ;color: darkmagenta;">First AI based Work from home Research Platform</p>
+              <img align=left src="images/me Five.png" alt="">
+    <h6 class="RE">GIVE ME FIVE</h6>
+    <p style="text-align: justify;padding-left:80px ;color: darkmagenta;">Take part in Survey, not 5 but takes 6mins to complete </p>
+    <img align=left src="images/Answering.png" alt="">
+    <h6 class="RE">NO ANSWEING PLESASE</h6>
+    <p style="text-align: justify;padding-left: 80px ;color: darkmagenta;">No Subjective answering,all questions are objective</p>
+    <img align=left src="images/Fool.png" alt="">
+    <h6 class="RE">FOOL PROOF</h6>
+    <P style="text-align: justify;padding-left: 80px ;color: darkmagenta;">Near-Free from self-rsponse prejudices</P>
+    <img align=left src="images/Dashboard.png" alt="">
+    <h6 class="RE">DASHBOARD IN YOU</h6>
+    <p style="text-align: justify;padding-left: 80px ;color: darkmagenta;">Analtical tools are provided to assess data with different filters</p>
+    <img align=left src="images/Beginning.png" alt="">
+      <h6 class="RE">JUST A BEGINNING</h6>
+      <p style="text-align: justify;padding-left: 80px ;color: darkmagenta;padding-right:150px;">This survey keeps track of future work from home assignments and gives comprehensive analysis from time to time</p>
+
+            </div>
+             
+             
+             
+        
+            <div class="column4">
+              <h1 class="just">Industry We cater to</h1>
+              <p style="font-size:20px ;color: darkmagenta;padding-right: 180px;font-weight: bold;">Banking&Finance|Education|NGO|Pharmacy|Information Technology|</span>
+              </p>
+            <img align=left src="images/cofee.png" alt="">
+  
+              <p style="font-weight: bold;padding-top: 17px;">initiative<span class="get" >GET YOUR SURVEY DONE</span></p>
+              <p style="color: darkmagenta;padding-left: 80px;font-size: 10px;font-weight: bold;">www.cofee.ngo</p>
+
+              <div class="vertical">
+                 <img class="Q" src="images/productivity.png" alt="" width="350">
+                 <p class="rotate" style="font-weight: bold;padding-bottom:160px;">EMPLOYEE SATISFACTION</p></div>
+             <p style="padding-left: 170px;font-weight: bold;"> WORK PRODUCTIVITY</p>
+          
+             
+          </div>
+  </div>
+<hr style="height:2px;border-width:0;color:red;background-color:gray">
+
+<div class="row2">
+
+  <h3 class=" text-center "><span class="g"> GET THE PIE OF SURVEY CAKE</span> </h3>
+
+  <div class="column1">
+    <div class="card1"> <img src="images/Layer 90.png" class="img-fluid mx-auto" width="110" class="card-img-top">
+      <h5 style="padding-top: 10px;color: darkblue;">Iam an individual</h5>
+                        <p class="card1-text">Know where you stand.Nohing is as interesting as knowing one self.Get to know WFH satisfaction rated.</p></div>
+                        <a href="#" class="btn btn-primary">FREE</a> 
+  </div>
+  <div class="column1">
+    <div class="card1"><img src="images/Layer 88.png " class="img-fluid mx-auto" width="80" class="card-img-top">
+      <h5 style="padding-top: 10px;color: darkblue;">Iam a corporate</h5>
+<p class="card1-text">Company is always as good as its employees.Get to know how good the employees are their productivity right now...</p>
+  </div>
+  <a href="#" class="btn btn-primary">PAID</a></div>
+  <div class="column1">
+    <div class="card1">
+      <img src="images/Layer 89.png " class="img-fluid mx-auto" width=80 class="card-img-top">
+      <h5 style="padding-top: 10px;  color: darkblue;">Iam an industry body</h5>
+<p class="card1-text">Get the trend and understand the changes across the industry with current work from home survey index.</p></div>
+<a href="#" class="btn btn-primary">More Info</a>
+  </div>
+</div>
+<div class="work">
+
+  <h3 class=" text-center ">WORK IS RIGHT PARTNERS </h3>
+<p style="padding-right: 10px; color: darkblue;">we have interesting partners who made this survey even more interesing</p>
+<!---<div class="container2" style="margin-top:30px">-->
+  <div class="row5">
+    <div class="column5"><img src="images/cofee.png">
+     
+    <p style="padding-top: 19px;padding-left: 10px;">Work is good.com is an initiative of Cofee.</p>
+     
+      <button>Visit Website</button></div>
+      <div class="vl">
+    <div class="column5"><img class="C" src="images/Layer 72 (2).png">
+     <p style="padding-top: 19px;text-align: center;">  Work is good.com is powered with zerocode.</p>
+
+      <button>Visit Website</button></div>
+  </div>
+</div>
+
+</div></div>
+<hr style="height:2px;border-width:0;color:red;background-color:gray">
+
+<h6 class="copy"> &copy; 2020 Work is Good</h6>
+
+
+<p style="text-align: center;
+padding-top: 300px;
+padding-right: 350px;
+      padding-left:450px;">
+   Software Solution : Q-Lana has partnered with highly innovative for software development from Hyderabad, india.</p>
+  <p style="text-align: center;
+  padding-right: 350px;
+        padding-left:450px;  " >Finding: Q-Lana works with a highly reputable fund management company Prashanth.Now </p>
+</div>
+<hr style="border: 10px solid green;
+border-radius: 5px;">
+  
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-
+DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+</body> 
+</html>
